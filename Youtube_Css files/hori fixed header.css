@@ -1,0 +1,337 @@
+.Header_Flex{
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.first_head{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.first_head_pic1{
+    height: 30px;
+    width: 30px;
+    margin-left: 14px;
+    margin-right: 11px;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+/******** Hover ******/
+.first_head_pic1:hover{
+    background-color: lightgray;
+}
+
+.pic1{
+    height: 19px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.first_head_pic2{
+    height: 15px;
+    margin-right: 80px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.pic2{
+    height: 15px;
+}
+
+.middle_head{           
+    flex:1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.search-bar {
+    height: 14px;
+    padding-left: 13px;                 
+    padding-right: 13px;                
+    padding-top: 7px;                   
+    padding-bottom: 7px; 
+    border-radius: 20px;
+    border-style: solid;        
+    border-color:rgb(189, 189, 189) ;
+    border-width:1px ;
+    flex: 1;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0px;
+}
+.midhead_button1{
+    height: 30px;
+    width: 47px;
+    background-color: rgb(240, 240, 240);
+    margin-left: -46px;
+    margin-right: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: rgb(189, 189, 189);
+    position: relative;      /*8*/
+    display: flex;           /*8*/
+    flex-direction: column;  /*8*/
+    align-items: center;     /*8*/
+}
+.midbutton_pic3{
+    height: 20px;
+    margin-top: 4px;
+ }
+ /***Hover****/
+ .midhead_button1:hover{
+    background-color: rgb(233, 233, 233);
+ }
+.midhead_button2{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    position: relative;      /*8*/
+    display: flex;           /*8*/
+    flex-direction: column;  /*8*/
+    align-items: center;     /*8*/
+}
+.midbutton_pic4{
+    height: 18px;
+    margin-top: 5px;
+}
+/****Hover*****/
+.midhead_button2:hover{
+    background-color: rgb(226, 225, 225);
+}
+
+.end_head{
+    width: 183px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;    /* this a feature to resist to keep the space dims bet the elements no matter*/
+}
+.div_of_create{
+    position: relative;      /*8*/
+    display: flex;           /*8*/
+    flex-direction: column;  /*8*/
+    align-items: center;     /*8*/
+    margin-left: 54px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+.end_head_pic5{
+    height: 18px;
+    margin-top: 5px;
+}
+.div_of_notific{
+    position: relative;
+    display: flex;           /*8*/
+    flex-direction: column;  /*8*/
+    align-items: center;     /*8*/
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+.end_head_pic6{
+    height: 18px;
+    margin-top: 5px;
+}
+/****Hover****/
+.div_of_create:hover,.div_of_notific:hover{
+    background-color: rgb(228, 228, 228);
+}
+/****notific numtip****/
+.notific_num{
+    position: absolute;
+    background-color: rgb(219, 2, 2);
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 20px;
+    top: 2px;
+    right: -2px;
+}
+.div_of_channel{
+    position: relative;      /*8*/
+    display: flex;           /*8*/
+    flex-direction: column;  /*8*/
+    align-items: center;     /*8*/
+    margin-right: 20px;
+}
+.end_head_profile{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+}
+/**************  this how to make an icontip when havor over it ********************/
+.hover_tap_search,.hover_tap_voice,
+.hover_tap_create,.hover_tap_notific,.hover_tap_channel{
+    position: absolute; 
+    background-color: rgb(92, 90, 90);
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    bottom:-42px;
+    opacity: 0;
+    pointer-events: none; 
+    white-space: nowrap; 
+    z-index: 200;
+    font-family: arial;
+    font-size: 12px;
+    opacity: 0;
+
+}
+
+ /******** hover *************/
+.midhead_button1:hover .hover_tap_search,.midhead_button2:hover .hover_tap_voice,
+.div_of_create:hover .hover_tap_create,.div_of_notific:hover .hover_tap_notific,
+.div_of_channel:hover .hover_tap_channel{  /*when touch the button,do action on the hover_tap*/
+    opacity: 1;
+
+ }
+ .midhead_button1:hover,.midhead_button2:hover,.div_of_create:hover,.div_of_notific:hover,
+ .div_of_channel:hover{  
+    cursor: pointer;
+ }
+
+
+
+ /*********** second header *******************/
+.Header_Flex_2nd{
+    background-color: rgb(255, 255, 255);
+    height: 43px;
+    position: fixed;
+    top: 42px;
+    left: 190px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    max-width: 100vw;
+    overflow-x: scroll;
+}
+.Header_Flex_2nd::-webkit-scrollbar{
+    height: 6px;
+}
+.Header_Flex_2nd::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+    
+}
+.Header_Flex_2nd::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+}
+
+.Header_2nd_Buttons,.Header_2nd_1stButton,.Header_2nd_Buttons2{
+    color: black;
+    background-color: rgb(236, 236, 236);
+    height: 15px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 6px;
+    font-family: arial;
+    font-size: 11px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.Header_2nd_1stButton{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.Header_2nd_Buttons2{
+    margin-right: 0;
+}
+/********* Hover ************/
+.Header_2nd_Buttons:hover,.Header_2nd_1stButton:hover,.Header_2nd_Buttons2:hover{
+    cursor: pointer;
+}
+.Header_2nd_Buttons:hover,.Header_2nd_Buttons2:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+
+.nextDiv{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 42px;
+    right: 4px;
+    width:75px;
+    height:35px;
+}
+.butcontainer{
+    background-color: white;
+}
+
+
+
+.fadeDiv{
+    width: 50%;
+    height: 100%;
+    background:linear-gradient(to left, rgb(255, 255, 255)27%,rgba(255, 255, 255, 0.014));
+}
+.nextButton{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+}
+.nextButton:hover{
+    background-color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+.nextButton:hover .nextHov{
+    opacity: 1;
+}
+.arrow{
+    border-left: 1px solid rgb(82, 82, 82);
+    border-bottom: 1px solid rgb(82, 82, 82);
+    width: 6px;
+    height: 6px;
+    transform: rotate(-135deg);
+    position: absolute;
+    right:13px;
+    top:11px;
+
+}
+.nextHov{
+    position: absolute; 
+    bottom:-35px;
+    left: -5px;
+    background-color: rgb(92, 90, 90);
+    color: white;
+    padding: 6px 7px;
+    border-radius: 8px;
+    pointer-events: none; 
+    font-size: 12px;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+

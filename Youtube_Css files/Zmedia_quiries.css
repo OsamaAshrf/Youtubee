@@ -1,0 +1,84 @@
+@media ( max-width: 1285px){
+    .Youtube_Grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media ( max-width: 1052px){
+    .min_verHead{
+        display: flex;
+    }
+    .Header_Flex_virtical{
+        display: none;
+    }
+    .Header_Flex_2nd{
+        left: 68px;
+    }
+    body{
+        padding-left: 70px;
+    }
+
+}
+@media ( max-width: 883px){
+    .Youtube_Grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media ( max-width: 632px){
+    .min_verHead{
+        display: none;
+    }
+    body{
+        padding-left: 20px;   
+    }
+    .Header_Flex_2nd{
+        left: 18px;
+    }
+}
+@media ( max-width: 561px){
+    .Youtube_Grid{
+        grid-template-columns: 1fr;
+    }
+    .Header_Flex_2nd{
+        left: 58px;
+        right: 58px
+    }
+    body{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .small_header{
+        display: block;
+    }
+}
+@media ( max-width: 500px){
+    .first_head,.end_head{
+        width: 130px;
+    }
+    .Header_Flex_2nd{
+        left: 20px;
+        right: 20px;
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .search-bar {
+        width: 80px;
+    }
+    .end_head{
+        width: 115px;
+        justify-content: unset;
+    }
+    .div_of_create{
+        margin-left: 5px;
+    }
+    .div_of_notific{
+        margin-right: 10px;
+    }
+    .div_of_channel{
+        margin: 0;
+    }
+}
